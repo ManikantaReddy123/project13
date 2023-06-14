@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#f5f5f5">
+<center>
+<table border="3">
+    <tr><th>JobID</th>
+        <th>Title</th>
+        <th>Skills</th>
+        <th>Description</th>
+
+    </tr>
+    {% for r in records %}
+    <tr>
+        <td>{{ r.JobID }}</td>
+        <td>{{ r.Title }}</td>
+        <td>{{ r.Skills }}</td>
+        <td>{{ r.Description }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</center>
+
+
+</body>
+</html>
